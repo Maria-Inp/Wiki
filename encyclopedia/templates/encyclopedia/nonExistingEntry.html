@@ -1,0 +1,12 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ entryTitle }}
+{% endblock %}
+
+{% block body %}
+    <h1>{{ entryTitle }}?</h1>
+    <br>
+    <h4>This page doesn't exist :(</h4>
+    <p>Click <a href="{% url 'encyclopedia:newEntry'%}">here</a> If you like to create this entry </p>
+{% endblock %}
